@@ -1,0 +1,72 @@
+import CoirMatFloor from "./CoirMatFloor.png";
+import Cotton from "./Cotton.png";
+import mosquito from "./mosquito.png";
+import TentSize from "./TentSize.png";
+import Waterproof from "./Waterproof.png";
+import ZipInGround from "./ZipInGroundsheet.png";
+import logoCombined from "./logo-combined.png";
+
+import ctaBg from "./cta-bg.png";
+
+// Packages
+import PackagesBanner from "./PackagesBanner.png";
+import FoxOrange from "./FoxOrange.png";
+import FoxWhite from "./FoxWhite.png";
+import HedgehogDark from "./HedgehogDark.png";
+import HedgehogWhite from "./HedgehogLight.png";
+import Stag from "./Stag.png";
+
+import gallery1 from "./gallery-1.jpeg";
+import gallery2 from "./gallery-2.jpg";
+import gallery3 from "./gallery-3.jpeg";
+import gallery4 from "./gallery-4.jpg";
+import gallery5 from "./gallery-5.jpg";
+import gallery6 from "./gallery-6.jpeg";
+import gallery7 from "./gallery-7.jpg";
+import gallery8 from "./gallery-8.jpg";
+import gallery9 from "./gallery-9.jpg";
+import gallery10 from "./gallery-10.jpg";
+import gallery11 from "./gallery-11.jpg";
+import gallery12 from "./gallery-12.jpg";
+import gallery13 from "./gallery-13.jpg";
+import gallery14 from "./gallery-14.jpeg";
+import gallery15 from "./gallery-15.jpg";
+import gallery16 from "./gallery-16.jpeg";
+import gallery17 from "./gallery-17.jpeg";
+
+export {
+    CoirMatFloor,
+    Cotton,
+    mosquito,
+    TentSize,
+    Waterproof,
+    ZipInGround,
+    logoCombined,
+    ctaBg,
+
+    gallery1,
+    gallery2,
+    gallery3,
+    gallery4,
+    gallery5,
+    gallery6,
+    gallery7,
+    gallery8,
+    gallery9,
+    gallery10,
+    gallery11,
+    gallery12,
+    gallery13,
+    gallery14,
+    gallery15,
+    gallery16,
+    gallery17,
+
+    // Packages
+    PackagesBanner,
+    FoxOrange,
+    FoxWhite,
+    HedgehogDark,
+    HedgehogWhite,  
+    Stag,
+}
