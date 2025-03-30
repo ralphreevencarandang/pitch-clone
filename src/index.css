@@ -7,6 +7,7 @@
 
 
 
+
 @theme{
   --color-primary: #F4983C;
   --color-brown: #827745;
@@ -14,6 +15,18 @@
   --color-black-font: #333333;
   --color-dirty-white: #FAF8F5;
   --font-display: 'oldenburg'
+}
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+  color-scheme: light dark;
+  color: #333333;
+  background-color: #FAF8F5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 

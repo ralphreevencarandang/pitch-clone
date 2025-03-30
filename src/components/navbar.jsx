@@ -1,0 +1,123 @@
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion"; // Import Framer Motion
+import logo2 from "../assets/logo2.png";
+
+export default function Navbar() {
+    const [isOpen, setIsOpen] = useState(false);
+    const [active, setActive] = useState("");
+
+    useEffect(() => {
+        setActive(window.location.pathname);
+    }, []);
+
+    // Close menu if screen size is large
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth >= 1024) {
+                setIsOpen(false);
+            }
+        };
+
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    const linkClass = (path) =>
+        `${active === path ? "text-[#F4983C]" : "text-[#FAF8F5] hover:text-[#F4983C]"} text-[17px]`;
+
+    return (
+        <motion.nav 
+            initial={{ background: "#827745" }}
+            animate={{ background: isOpen ? "#615933" : "#827745" }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="relative"
+        >
+            <div className="max-w-screen-xl flex items-center justify-between mx-auto p-5">
+                
+                {/* Left-side menu items (Hidden in Mobile) */}
+            <div className="hidden md:flex space-x-5">
+                <a href="/" className={`${linkClass("/")} text-sm md:text-base lg:text-lg`}>Home</a>
+                <a href="/about" className={`${linkClass("/about")} text-sm md:text-base lg:text-lg`}>About</a>
+                <a href="/our-tents" className={`${linkClass("/our-tents")} text-sm md:text-base lg:text-lg`}>Our Tents</a>
+                <a href="/packages" className={`${linkClass("/packages")} text-sm md:text-base lg:text-lg`}>Packages</a>
+            </div>
+
+            {/* Logo centered */}
+            <a href="/" className="absolute left-1/2 transform -translate-x-1/2 flex items-center">
+                <img src={logo2} className="h-5 md:h-6 lg:h-8" alt="Logo" />
+            </a>
+
+            {/* Right-side menu items (Hidden in Mobile) */}
+            <div className="hidden md:flex space-x-5">
+                <a href="/stories" className={`${linkClass("/stories")} text-sm md:text-base lg:text-lg`}>Stories</a>
+                <a href="/booking" className={`${linkClass("/booking")} text-sm md:text-base lg:text-lg`}>Booking</a>
+                <a href="/contact" className={`${linkClass("/contact")} text-sm md:text-base lg:text-lg`}>Contact</a>
+            </div>
+            
+                {/* Mobile Menu Button (Placed on Right) */}
+                <button
+                    type="button"
+                    className="md:hidden ml-auto p-2 w-10 h-10 text-[#FAF8F5] rounded-lg focus:outline-none"
+                    onClick={() => setIsOpen(!isOpen)}
+                    aria-controls="navbar-default"
+                    aria-expanded={isOpen}
+                >
+                    <span className="sr-only">Open main menu</span>
+                    {isOpen ? (
+                        <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    ) : (
+                        <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    )}
+                </button>
+            </div>
+
+            {/* Border with Centered Text */}
+            <div className="relative border-b-4 border-[#F4983C] z-51">
+                <span className="absolute left-1/2 transform -translate-x-1/2 -top-2 bg-[#F4983C] px-4 text-[#FAF8F5] text-sm rounded-full flex justify-center text-center">
+                    Luxury Tent Hire
+                </span>
+            </div>
+
+            {/* Mobile Menu (Animated) */}
+            <AnimatePresence>
+                {isOpen && (
+                    <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                        className="md:hidden absolute top-21 left-0 w-full bg-[#827745] shadow-md p-3 z-50"
+                    >
+                        <ul className="flex flex-col space-y-3 items-center justify-center py-3 w-full">
+                            <li className="w-full pt-3 text-center">
+                                <a href="/" className="text-lg text-[#FAF8F5] hover:text-[#F4983C]">Home</a>
+                            </li>
+                            <li className="w-full border-t border-dotted border-[#FAF8F5] pt-3 text-center">
+                                <a href="/about" className="text-lg text-[#FAF8F5] hover:text-[#F4983C]">About</a>
+                            </li>
+                            <li className="w-full border-t border-dotted border-[#FAF8F5] pt-3 text-center">
+                                <a href="/our-tents" className="text-lg text-[#FAF8F5] hover:text-[#F4983C]">Our Tents</a>
+                            </li>
+                            <li className="w-full border-t border-dotted border-[#FAF8F5] pt-3 text-center">
+                                <a href="/packages" className="text-lg text-[#FAF8F5] hover:text-[#F4983C]">Packages</a>
+                            </li>
+                            <li className="w-full border-t border-dotted border-[#FAF8F5] pt-3 text-center">
+                                <a href="/stories" className="text-lg text-[#FAF8F5] hover:text-[#F4983C]">Stories</a>
+                            </li>
+                            <li className="w-full border-t border-dotted border-[#FAF8F5] pt-3 text-center">
+                                <a href="/booking" className="text-lg text-[#FAF8F5] hover:text-[#F4983C]">Booking</a>
+                            </li>
+                            <li className="w-full border-t border-dotted border-[#FAF8F5] pt-3 text-center">
+                                <a href="/contact" className="text-lg text-[#FAF8F5] hover:text-[#F4983C] ">Contact</a>
+                            </li>
+                        </ul>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+        </motion.nav>
+    );
+}
