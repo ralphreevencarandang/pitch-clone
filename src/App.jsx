@@ -6,6 +6,10 @@ import Packages from "./sections/Packages";
 import Booking from "./sections/Booking";
 import HomeNavbar from "./components/homenavbar";
 import Navbar from "./components/navbar";
+import About from "./sections/About";
+import Stories from "./sections/Stories";
+import Footer from "./components/Footer";
+
 
 // 404 Not Found Component
 function NotFound() {
@@ -32,8 +36,11 @@ function Layout() {
                 <Route path="/ourTents" element={<OurTents />} />
                 <Route path="/packages" element={<Packages />} />
                 <Route path="/booking" element={<Booking />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/stories" element={<Stories />} />
                 <Route path="*" element={<NotFound />} /> {/* 404 Page */}
             </Routes>
+            <Footer/>
         </>
     );
 }

@@ -83,4 +83,12 @@
 
 }
 
+.footer-menu{
+  display: grid;
+grid-template-columns: repeat(2, auto);
+gap: 10px 580px;
+}
 
+.social{
+  margin-bottom: 100px;
+}
