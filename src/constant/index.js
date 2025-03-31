@@ -194,7 +194,7 @@ export const packagesCard = [
 export const storiesEvents = [
     {
         imgURL: stories1,
-        title: "Sout Wales Wedding",
+        title: "South Wales Wedding",
         details: "My fiancé and I hired Pitch for our guest accommodation at our glamping wedding in April 2019. Chris and his team were just fabulous. Despite the unfortunate bad weather, they were super positive...",
     },
     {
@@ -207,4 +207,5 @@ export const storiesEvents = [
         title: "Mistress Mary Festival 2021",
         details: "Pitch provided a service for us at our small private festival (affiliated to Secret Garden Party) in 2021. Although the event was arranged at short notice (due to Covid) they were so organised and capable...",
     },
+
 ];

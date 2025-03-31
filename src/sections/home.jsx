@@ -5,11 +5,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // Import desktop images
-import img1 from "../assets/home/img1.png";
-import img2 from "../assets/home/img2.png";
-import img3 from "../assets/home/img3.png";
 
 import logo3 from "../assets/home/logo3.png";
+import {desktopImg1, desktopImg2, desktopImg3} from "../assets/images";
 
 import BorderImage from "../assets/home/rope-border.png";
 
@@ -21,7 +19,7 @@ import mobileImg3 from "../assets/home/mobile_Festival_03.png";
 // Import background image for "How to Pitch"
 import howToPitchBg from "../assets/home/bg-how-to-pitch.png";
 
-const desktopImages = [img1, img2, img3];
+const desktopImages = [desktopImg1, desktopImg2, desktopImg3];
 const mobileImages = [mobileImg1, mobileImg2, mobileImg3];
 
 export default function Home() {

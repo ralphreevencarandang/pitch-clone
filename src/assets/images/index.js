@@ -42,6 +42,12 @@ import stories2 from "../stories/kettle.png";
 import stories3 from "../stories/log.png";
 
 
+// Home Images
+import desktopImg1 from "../home/img1.png";
+import desktopImg2 from "../home/img2.png";
+import desktopImg3 from "../home/img3.png";
+
+
 export {
     CoirMatFloor,
     Cotton,
@@ -83,6 +89,12 @@ export {
     stories1,
     stories2,
     stories3,
+
+    // Home Images
+    desktopImg1,
+    desktopImg2,  
+    desktopImg3,
+
 }
 
 export const aboutImages =[

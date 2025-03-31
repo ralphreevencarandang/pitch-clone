@@ -10,8 +10,6 @@ import { div } from "framer-motion/client";
 
 
 function Stories() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="w-screen min-h-screen bg-[#f8f6f2]">
       
@@ -33,8 +31,6 @@ function Stories() {
               </div>
           )
         }
-        
-
         
       </div>
     </div>
