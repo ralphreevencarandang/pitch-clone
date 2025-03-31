@@ -47,6 +47,13 @@ import desktopImg1 from "../home/img1.png";
 import desktopImg2 from "../home/img2.png";
 import desktopImg3 from "../home/img3.png";
 
+import mobileImg1 from "../home/mobile_DadsWeekender_01.png";
+import mobileImg2 from "../home/mobile_Wedding_02.png";
+import mobileImg3 from "../home/mobile_Festival_03.png";
+
+import logo3 from "../home/logo3.png";
+import BorderImage from "../home/rope-border.png";
+import howToPitchBg from "../home/bg-how-to-pitch.png";
 
 export {
     CoirMatFloor,
@@ -95,6 +102,13 @@ export {
     desktopImg2,  
     desktopImg3,
 
+    mobileImg1,
+    mobileImg2,
+    mobileImg3,
+
+    logo3,
+    howToPitchBg,
+    BorderImage,
 }
 
 export const aboutImages =[

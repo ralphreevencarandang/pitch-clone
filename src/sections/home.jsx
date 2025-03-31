@@ -4,20 +4,11 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-// Import desktop images
-
-import logo3 from "../assets/home/logo3.png";
+// Import desktop and mobile images
 import {desktopImg1, desktopImg2, desktopImg3} from "../assets/images";
-
-import BorderImage from "../assets/home/rope-border.png";
-
-// Import mobile images
-import mobileImg1 from "../assets/home/mobile_DadsWeekender_01.png";
-import mobileImg2 from "../assets/home/mobile_Wedding_02.png";
-import mobileImg3 from "../assets/home/mobile_Festival_03.png";
-
-// Import background image for "How to Pitch"
-import howToPitchBg from "../assets/home/bg-how-to-pitch.png";
+import {mobileImg1, mobileImg2, mobileImg3} from "../assets/images";
+// Import logo, border image, and how to pitch background image
+import {logo3, BorderImage, howToPitchBg} from "../assets/images";
 
 const desktopImages = [desktopImg1, desktopImg2, desktopImg3];
 const mobileImages = [mobileImg1, mobileImg2, mobileImg3];
