@@ -34,6 +34,14 @@ import gallery15 from "./gallery-15.jpg";
 import gallery16 from "./gallery-16.jpeg";
 import gallery17 from "./gallery-17.jpeg";
 
+// Stories Images
+
+
+import stories1 from "../stories/campfire.png";
+import stories2 from "../stories/kettle.png";
+import stories3 from "../stories/log.png";
+
+
 export {
     CoirMatFloor,
     Cotton,
@@ -69,6 +77,12 @@ export {
     HedgehogDark,
     HedgehogWhite,  
     Stag,
+    
+
+    // Stories Image
+    stories1,
+    stories2,
+    stories3,
 }
 
 export const aboutImages =[
@@ -85,3 +99,4 @@ export const aboutImages =[
         src: "https://pitch-tents.co.uk/wp-content/uploads/2024/10/PITCH_3_SINGLE_PREM.jpeg",
       },
 ];
+

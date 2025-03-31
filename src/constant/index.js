@@ -34,8 +34,14 @@ import {CoirMatFloor,
     HedgehogDark,
     HedgehogWhite,  
     Stag,
+    stories1,
+    stories2,
+    stories3,
 
 } from "../assets/images";
+
+
+
 
 
 
@@ -182,5 +188,23 @@ export const packagesCard = [
     {
         imgURL:Stag,
         star: "FIVE STAR"
+    },
+];
+
+export const storiesEvents = [
+    {
+        imgURL: stories1,
+        title: "Sout Wales Wedding",
+        details: "My fiancé and I hired Pitch for our guest accommodation at our glamping wedding in April 2019. Chris and his team were just fabulous. Despite the unfortunate bad weather, they were super positive...",
+    },
+    {
+        imgURL: stories2,
+        title: "Devon Wedding",
+        details: "We used Pitch for our wedding in September and they were absolutely amazing! The tents were beautiful and the guests absolutely loved them. A lot of other guests that stayed in accommodation off site...",
+    },
+    {
+        imgURL: stories3,
+        title: "Mistress Mary Festival 2021",
+        details: "Pitch provided a service for us at our small private festival (affiliated to Secret Garden Party) in 2021. Although the event was arranged at short notice (due to Covid) they were so organised and capable...",
     },
 ];
