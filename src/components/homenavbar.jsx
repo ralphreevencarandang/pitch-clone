@@ -24,7 +24,7 @@ export default function HomeNavbar() {
                 <div className="hidden md:flex space-x-5 mb-7 text-lg text-[#FAF8F5]">
                     <a href="/" className="hover:text-[#F4983C]">Home</a>
                     <a href="/about" className="hover:text-[#F4983C]">About</a>
-                    <a href="/our-tents" className="hover:text-[#F4983C]">Our Tents</a>
+                    <a href="/ourtents" className="hover:text-[#F4983C]">Our Tents</a>
                     <a href="/packages" className="hover:text-[#F4983C]">Packages</a>
                 </div>
 
@@ -113,7 +113,7 @@ export default function HomeNavbar() {
                             {[  
                                 { name: "Home", path: "/" },
                                 { name: "About", path: "/about" },
-                                { name: "Our Tents", path: "/our-tents" },
+                                { name: "Our Tents", path: "/ourtents" },
                                 { name: "Packages", path: "/packages" },
                                 { name: "Stories", path: "/stories" },
                                 { name: "Booking", path: "/booking" },

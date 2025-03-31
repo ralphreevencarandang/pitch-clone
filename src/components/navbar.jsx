@@ -38,7 +38,7 @@ export default function Navbar() {
             <div className="hidden md:flex space-x-5">
                 <a href="/" className={`${linkClass("/")} text-sm md:text-base lg:text-lg`}>Home</a>
                 <a href="/about" className={`${linkClass("/about")} text-sm md:text-base lg:text-lg`}>About</a>
-                <a href="/our-tents" className={`${linkClass("/our-tents")} text-sm md:text-base lg:text-lg`}>Our Tents</a>
+                <a href="/ourtents" className={`${linkClass("/ourtents")} text-sm md:text-base lg:text-lg`}>Our Tents</a>
                 <a href="/packages" className={`${linkClass("/packages")} text-sm md:text-base lg:text-lg`}>Packages</a>
             </div>
 
@@ -100,7 +100,7 @@ export default function Navbar() {
                                 <a href="/about" className="text-lg text-[#FAF8F5] hover:text-[#F4983C]">About</a>
                             </li>
                             <li className="w-full border-t border-dotted border-[#FAF8F5] pt-3 text-center">
-                                <a href="/our-tents" className="text-lg text-[#FAF8F5] hover:text-[#F4983C]">Our Tents</a>
+                                <a href="/ourtents" className="text-lg text-[#FAF8F5] hover:text-[#F4983C]">Our Tents</a>
                             </li>
                             <li className="w-full border-t border-dotted border-[#FAF8F5] pt-3 text-center">
                                 <a href="/packages" className="text-lg text-[#FAF8F5] hover:text-[#F4983C]">Packages</a>

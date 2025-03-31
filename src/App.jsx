@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Home from "./sections/home";
 import Contact from "./sections/contact";
 import OurTents from "./sections/OurTents";
@@ -9,27 +10,26 @@ import Navbar from "./components/navbar";
 import About from "./sections/About";
 import Stories from "./sections/Stories";
 import Footer from "./components/Footer";
-
-
-// 404 Not Found Component
-function NotFound() {
-    return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white">
-            <h1 className="text-5xl font-bold mb-4">404</h1>
-            <p className="text-lg mb-6">Oops! The page you're looking for doesn't exist.</p>
-            <a href="/" className="px-6 py-3 bg-[#F4983C] text-white rounded-lg hover:bg-[#d87c2a] transition">
-                Go Back Home
-            </a>
-        </div>
-    );
-}
+import NotFound from "./sections/404";
 
 function Layout() {
-    const location = useLocation(); // Get the current route
+    const location = useLocation();
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 100);
+        };
+        
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     return (
         <>
-            {location.pathname === "/" ? <HomeNavbar /> : <Navbar />}
+            <div className="sticky top-0 left-0 w-full z-50">
+                {location.pathname === "/" && !scrolled ? <HomeNavbar /> : <Navbar />}
+            </div>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/contact" element={<Contact />} />
@@ -38,9 +38,9 @@ function Layout() {
                 <Route path="/booking" element={<Booking />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/stories" element={<Stories />} />
-                <Route path="*" element={<NotFound />} /> {/* 404 Page */}
+                <Route path="*" element={<NotFound />} />
             </Routes>
-            <Footer/>
+            <Footer />
         </>
     );
 }
