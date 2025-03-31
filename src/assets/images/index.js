@@ -36,7 +36,6 @@ import gallery17 from "./gallery-17.jpeg";
 
 // Stories Images
 
-
 import stories1 from "../stories/campfire.png";
 import stories2 from "../stories/kettle.png";
 import stories3 from "../stories/log.png";

@@ -1,12 +1,7 @@
-import { useState } from "react";
 import img1 from "../assets/stories/banner.jpg";
-import img2 from "../assets/stories/campfire.png";
-import img3 from "../assets/stories/kettle.png";
-import img4 from "../assets/stories/log.png";
 
 import {storiesEvents} from "../constant/index";
 import StoriesCard from "../components/StoriesCard";
-import { div } from "framer-motion/client";
 
 
 function Stories() {
