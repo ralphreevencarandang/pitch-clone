@@ -1,17 +1,14 @@
 import React from "react";
 import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
+import ReadyToPitch from "../sections/ReadyToPitch"; 
 
 const Footer = () => {
   return (
     <footer className="bg-[#827745] border-t-4">
       {/* Call-to-Action Section */}
-      <div 
-        className="bg-[#282433] text-white text-center py-15 sm:bg-[url('/assets/stories/cta-bg.png')] sm:bg-center sm:bg-no-repeat">
-        <h3 className="text-2xl font-display font-semibold">Ready to Pitch?</h3>
-        <div className="flex justify-center items-center ">
-            <button className="text-white bg-primary py-3 px-5 border-6 border-double border-amber-50 rounded-2xl font-semibold cursor-pointer hover:bg-orange-500 min-w-[170px] font-display">START PLANNING YOUR TRIP</button>
-        </div>
-      </div>
+      <section className="w-full bg-secondary">
+              <ReadyToPitch/>
+            </section> 
 
       {/* Scroll to Top Button with Orange Line */}
       <div className="relative w-full flex justify-center mt-[-20px]">

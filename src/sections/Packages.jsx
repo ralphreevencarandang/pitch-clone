@@ -66,11 +66,7 @@ export default function Packages() {
                 )
                 
                 }
-            </section>
-
-            <section className="w-full bg-secondary">
-        <ReadyToPitch/>
-      </section> 
+            </section> 
 
 
 

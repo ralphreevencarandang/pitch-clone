@@ -1,5 +1,3 @@
-import Footer from "../Components/Footer";
-
 
 function About() {
   
@@ -82,12 +80,12 @@ function About() {
         </div>
       </section>
       <section className="bg-[#f4983c] py-8">
-        <div className="max-w-4xl mx-auto flex flex-col-3 justify-center gap-4 ">
+        <div className="max-w-4xl mx-auto columns-3xl md:grid-cols-3 flex flex-wrap justify-center">
           {images.map((image) => (
-            <div key={image.id} className="w-1/3 p-1">
+            <div key={image.id} className="w-full sm:w-1/2 md:w-1/3 p-2 flex justify-center">
               <figure>
                 <a href={`#${image.id}`}>
-                  <img src={image.src} alt={image.id} className="" />
+                  <img src={image.src} alt={image.id} className="w-full h-auto" />
                 </a>
               </figure>
             </div>
@@ -97,7 +95,7 @@ function About() {
       {images.map((image) => (
         <div key={image.id} id={image.id} className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden">
           <figure>
-            <img src={image.src} alt={image.id} />
+            <img src={image.src} alt={image.id} className="max-w-full max-h-full" />
           </figure>
         </div>
       ))}
