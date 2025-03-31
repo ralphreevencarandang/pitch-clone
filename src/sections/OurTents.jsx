@@ -48,9 +48,7 @@ export default function OurTents() {
 
       </section>
 
-      <section className="w-full bg-secondary">
-        <ReadyToPitch/>
-      </section>
+      
 
     </>
   );
