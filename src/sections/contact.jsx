@@ -2,12 +2,12 @@ import React from "react";
 
 export default function Contact() {
     return (
-        <section id="contact" className="py-12 bg-[#FAF8F5] text-gray-900">
+        <section id="contact" className="py-12 bg-dirty-white text-gray-900">
             <div className="max-w-4xl mx-auto">
                 <h1 className="text-4xl font-bold text-center mb-4 font-display text-[#282433]">
                     Contact
                 </h1>
-                <p className="text-center text-[#33333] mb-8 text-md mx-12">
+                <p className="text-center text-secondary mb-8 text-md mx-12">
                     To speak to one of our team about a Pitch you can submit your enquiry using the form below or alternatively you can call us on{" "}
                     <a href="tel:07850454071" className="font-semibold">
                         07850 454071
@@ -20,7 +20,7 @@ export default function Contact() {
 
                 {/* Contact Form */}
                 
-                <form className="bg-[#282433] text-white shadow-lg rounded-2xl mx-7 px-16 py-18 grid grid-cols-1 md:grid-cols-2 gap-16 border-6 border-double border-white">
+                <form className="bg-secondary text-white shadow-lg rounded-2xl mx-7 px-16 py-18 grid grid-cols-1 md:grid-cols-2 gap-16 border-6 border-double border-white">
                     {/* Left Panel: Name, Phone, Email */}
                     <div className="space-y-4">
                         <div>
@@ -80,7 +80,7 @@ export default function Contact() {
                 <div className="flex justify-center mt-6">
                     <button
                         type="submit"
-                        className="inline-block text-white bg-[#F4983C] py-3 px-6 text-lg font-semibold rounded-2xl border-6 border-double border-white font-display cursor-pointer transition duration-300 hover:bg-[#d87c2a] min-w-[170px]"
+                        className="inline-block text-white bg-primary py-3 px-6 text-lg font-semibold rounded-2xl border-6 border-double border-white font-display cursor-pointer transition duration-300 hover:bg-[#d87c2a] min-w-[170px]"
                     >
                         Submit
                     </button>
