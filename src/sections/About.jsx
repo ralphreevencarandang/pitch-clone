@@ -1,21 +1,6 @@
+import { aboutImages } from "../assets/images";
 
 function About() {
-  
-  const images = [
-    {
-      id: "gallery1",
-      src: "https://pitch-tents.co.uk/wp-content/uploads/2024/10/PITCH_DOUBLE_PREM_ANGLE2.jpeg",
-    },
-    {
-      id: "gallery2",
-      src: "https://pitch-tents.co.uk/wp-content/uploads/2024/10/PITCH_DETAIL_03.jpeg",
-    },
-    {
-      id: "gallery3",
-      src: "https://pitch-tents.co.uk/wp-content/uploads/2024/10/PITCH_3_SINGLE_PREM.jpeg",
-    },
-  ];
-
   return (
     <div className="w-screen min-h-screen bg-[#f8f6f2]">
       
@@ -81,7 +66,7 @@ function About() {
       </section>
       <section className="bg-[#f4983c] py-8">
         <div className="max-w-4xl mx-auto columns-3xl md:grid-cols-3 flex flex-wrap justify-center">
-          {images.map((image) => (
+          {aboutImages.map((image) => (
             <div key={image.id} className="w-full sm:w-1/2 md:w-1/3 p-2 flex justify-center">
               <figure>
                 <a href={`#${image.id}`}>
@@ -92,7 +77,7 @@ function About() {
           ))}
         </div>
       </section>
-      {images.map((image) => (
+      {aboutImages.map((image) => (
         <div key={image.id} id={image.id} className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden">
           <figure>
             <img src={image.src} alt={image.id} className="max-w-full max-h-full" />

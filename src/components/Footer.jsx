@@ -4,9 +4,9 @@ import ReadyToPitch from "../sections/ReadyToPitch";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#827745] border-t-4">
+    <footer className="bg-[#827745] border-t-5 border-double border-white">
       {/* Call-to-Action Section */}
-      <section className="w-full bg-secondary">
+          <section className="w-full bg-secondary">
               <ReadyToPitch/>
             </section> 
 

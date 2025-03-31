@@ -70,3 +70,18 @@ export {
     HedgehogWhite,  
     Stag,
 }
+
+export const aboutImages =[
+    {
+        id: "gallery1",
+        src: "https://pitch-tents.co.uk/wp-content/uploads/2024/10/PITCH_DOUBLE_PREM_ANGLE2.jpeg",
+      },
+      {
+        id: "gallery2",
+        src: "https://pitch-tents.co.uk/wp-content/uploads/2024/10/PITCH_DETAIL_03.jpeg",
+      },
+      {
+        id: "gallery3",
+        src: "https://pitch-tents.co.uk/wp-content/uploads/2024/10/PITCH_3_SINGLE_PREM.jpeg",
+      },
+];
