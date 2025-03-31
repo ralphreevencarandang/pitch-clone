@@ -4,9 +4,6 @@ import {CoirMatFloor,
     TentSize,
     Waterproof,
     ZipInGround,
-
-
-
     gallery1,
     gallery2,
     gallery3,

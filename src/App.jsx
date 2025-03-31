@@ -33,7 +33,7 @@ function Layout() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/our-tents" element={<OurTents />} />
+                <Route path="/ourtents" element={<OurTents />} />
                 <Route path="/packages" element={<Packages />} />
                 <Route path="/booking" element={<Booking />} />
                 <Route path="/about" element={<About />} />
